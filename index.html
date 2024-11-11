@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM project by kavita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main" id="main">
+            <h1><i class="fa-regular fa-credit-card"></i> ATM Interface</h1>
+            <img src="https://media.lordicon.com/icons/wired/flat/2365-tapping-credit-card.gif" alt="" width="150px"
+                height="100px">
+            <h2 id="wrong">Enter your PIN to access the ATM.</h2>
+            <input type="password" id="enter_pin" placeholder="Enter your Pin">
+            <button id="enteredpin" onclick="enter()"> Enter pin</button>
+
+            
+            <!-- //////////////////////////////// -->
+            <p id="choose" style="display: none;">choose an option</p> <br>
+        
+<br>
+        <button id="withdraw" style="display: none;" onclick="withdraw()">withdraw</button>
+        <button id="balance" style="display: none;" onclick="checkk()">Check balance</button>
+        <button id="deposite" style="display: none;" onclick="deposite()">Deposite</button>
+        <button id="exit" style="display: none;" onclick="Exit()">exit</button>
+        </div>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
